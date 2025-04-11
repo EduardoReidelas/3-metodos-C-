@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Digite o primeiro número:");
+        int num1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o segundo número:");
+        int num2 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o terceiro número:");
+        int num3 = int.Parse(Console.ReadLine());
+
+        int resultado = SomarTresNumeros(num1, num2, num3);
+
+        Console.WriteLine("A soma dos três números é: " + resultado);
+    }
+
+    static int SomarTresNumeros(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+}
