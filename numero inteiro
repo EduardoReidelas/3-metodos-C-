@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Digite um número inteiro:");
+        int numero = int.Parse(Console.ReadLine());
+
+        bool resultado = EhMultiploDeCinco(numero);
+
+        Console.WriteLine(resultado ? "Sim" : "Não");
+    }
+
+    static bool EhMultiploDeCinco(int numero)
+    {
+        return numero % 5 == 0;
+    }
+}
